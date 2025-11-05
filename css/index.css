@@ -1,0 +1,50 @@
+
+body {
+    margin-top:60px;
+}
+
+/*Custom navbar background*/
+.navbar {
+    background:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+
+
+/* Set fixed height for carousel */
+.carousel-item {
+height: 600px;
+}
+
+/* Make images uniform and cover the container */
+.carousel-item img {
+filter: brightness(0.6);
+height: 600px;
+object-fit: cover;
+object-position: center;
+}
+
+/* Center the caption vertically */
+.carousel-caption {
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Add animation to text */
+.carousel-item.active .carousel-caption h1,
+.carousel-item.active .carousel-caption p,
+.carousel-item.active .carousel-caption div {
+animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    transform: translateY(30px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
